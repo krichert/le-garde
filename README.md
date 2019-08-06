@@ -2,7 +2,7 @@
 
 Strona dla **Le Garde**, studia dietetyczno-treningowego.
 
-Live demo [balance](https://krichert.github.io/le-garde)
+Live demo [le-garde](https://krichert.github.io/le-garde)
 
 Wykorzystane technologie
 
