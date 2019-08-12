@@ -1,4 +1,4 @@
-# balance
+# Le Garde
 
 Strona dla **Le Garde**, studia dietetyczno-treningowego.
 
