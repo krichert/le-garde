@@ -30,13 +30,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="asyncImage" data-src="./img/background.png">
 <main class="main">
     <div class="logo-container">
         <img class="logo" src="./img/logo.png"/>
-    </div>
-    <div class="content">
-        <span>Sport Agency Est. 2019</span>
     </div>
 </main>
 <footer class="footer">
@@ -50,5 +47,24 @@
         </div>
     </div>
 </footer>
+<script>
+  (function() {
+    'use strict';
+    // Page is loaded
+    const objects = document.getElementsByClassName('asyncImage');
+    Array.from(objects).map((item) => {
+      // Start loading image
+      const img = new Image();
+      img.src = item.dataset.src;
+      // Once image is loaded replace the src of the HTML element
+      img.onload = () => {
+        item.classList.remove('asyncImage');
+        return item.nodeName === 'IMG' ?
+          item.src = item.dataset.src :
+          item.style.backgroundImage = `url(${item.dataset.src})`;
+      };
+    });
+  })();
+</script>
 </body>
 </html>

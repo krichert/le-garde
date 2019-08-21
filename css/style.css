@@ -4,8 +4,9 @@
 }
 
 body {
-    background-image: url("../img/background.png");
-    background-repeat: repeat;
+    background-image: url("../img/background-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fadabd;
     font-family: 'Constantia Bold', 'Open Sans', sans-serif;
     display: flex;
@@ -32,18 +33,13 @@ body {
 }
 
 .logo-container {
-    width: 30%;
-}
-
-.content {
-    padding-top: 5em;
-    font-size: 0.8em;
+    width: 50%;
 }
 
 /* FOOTER */
 
 .footer {
-    font-size: 0.65em;
+    font-size: 0.75em;
     flex-grow: 1;
 }
 
@@ -74,19 +70,23 @@ body {
 
 @media screen and (max-width: 768px) {
     .logo-container {
-        width: 40%;
+        width: 60%;
+    }
+
+    .footer {
+        font-size: 0.65em;
     }
 }
 
 @media screen and (max-width: 568px) {
     .logo-container {
-        width: 50%;
+        width: 70%;
     }
 }
 
 @media screen and (max-width: 425px) {
     .logo-container {
-        width: 60%;
+        width: 80%;
     }
 
     .footer-items-container {
@@ -101,12 +101,12 @@ body {
 
 @media screen and (max-width: 375px) {
     .logo-container {
-        width: 70%;
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 320px) {
     .logo-container {
-        width: 80%;
+        width: 100%;
     }
 }
