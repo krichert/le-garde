@@ -1,6 +1,6 @@
 # Le Garde
 
-Strona dla **Le Garde**, studia dietetyczno-treningowego.
+Strona dla **Le Garde**, kancelarii prawniczej.
 
 Live demo [le-garde](https://krichert.github.io/le-garde)
 
